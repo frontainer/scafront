@@ -1,6 +1,6 @@
 {
   "name": "scafront",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Minimal front-end scaffold generator library",
   "engines": {
     "node": ">=0.12.0"
