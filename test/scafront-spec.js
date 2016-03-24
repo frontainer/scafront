@@ -33,7 +33,11 @@ describe('Scaf', function() {
     });
     it('append', function() {
         assert(scaf.append('../demo/result/sample.js','\n//appended text'));
-        assert(scaf.append('../demo/result/sample.js') === undefined);
+        assert(scaf.append('../demo/result/sample.js') instanceof Promise);
+    });
+    it('append', function() {
+        assert(scaf.prepend('../demo/result/sample.js','//prepend text\n'));
+        assert(scaf.prepend('../demo/result/sample.js') instanceof Promise);
     });
     it('all', function() {
         assert(scaf.all([]) instanceof Promise);
